@@ -13,19 +13,17 @@
         <!-- Left Card -->
         <section class="left-card">
             
+            <!-- Top Login (Logo and Dark/Light Button)-->
+            <div class="top-login">
+                <img src="./assets/logo.png" alt="camp.in">
+                <h1>Light/Dark</h1>
+            </div>
+
             <!-- Login Card -->
             <div id="card-login">
-                <!-- Top Login (Logo and Dark/Light Button)-->
-                <div class="top-login">
-                    <img src="./assets/logo.png" alt="camp.in">
-                    <div>Light/Dark</div>
-                </div>
-                
-                <!-- Login Card -->
-                <div id="login">
-
+                <div>
                     <!-- Header -->
-                    <div class="header">
+                    <div id="header">
                         <div class="header-title">
                             <ion-icon name="enter-outline"></ion-icon>
                             <h1>Faça seu login</h1>
@@ -36,20 +34,20 @@
                     <!-- Form Login -->
                     <form action="">
                         <!-- Email -->
-                        <div class="input">
-                            <label for="fEmail">E-mail</label>
-                            <div class="email-input">
+                        <div class="email-wrapper">
+                            <label for="fEmail" class="fText">E-mail</label>
+                            <div class="input">
                                 <ion-icon name="mail-outline"></ion-icon>
-                                <input type="email" name="fEmail" id="fEmail" placeholder="Digite seu e-mail" required>
+                                <input type="email" name="fEmail" class="fInput" placeholder="Digite seu e-mail">
                             </div>
                         </div>
                         
                         <!-- Password -->
-                        <div class="input">
-                            <label for="fPassword">Senha</label>
-                            <div class="password-input">
+                        <div class="password-wrapper">
+                            <label for="fPassword" class="fText">Senha</label>
+                            <div class="input">
                                 <ion-icon name="lock-closed-outline"></ion-icon>
-                                <input type="password" name="fPassword" id="fPassword">
+                                <input type="password" name="fPassword" class="fInput" placeholder="Digite sua senha">
                                 <button id="eye-button">
                                     <ion-icon name="eye-outline"></ion-icon>
                                 </button>
@@ -65,12 +63,11 @@
     
                         <!-- Submit Button & Register-->
                         <div class="enter-button">
-                            <button type="submit">ENTRAR</button>
+                            <button type="button">ENTRAR</button>
                             <a href="">Não tem uma conta? <strong>Registre-se</strong></a>
                         </div>
                     </form>
                 </div>
-
             </div>
         </section>
 
