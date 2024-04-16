@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <!-- Left Card -->
-        <section class="left-card">
+        <section id="left-card">
             
             <!-- Top Login (Logo and Dark/Light Button)-->
             <div class="top-login">
@@ -21,7 +21,6 @@
 
             <!-- Login Card -->
             <div id="card-login">
-                <div>
                     <!-- Header -->
                     <div id="header">
                         <div class="header-title">
@@ -37,7 +36,7 @@
                         <div class="email-wrapper">
                             <label for="fEmail" class="fText">E-mail</label>
                             <div class="input">
-                                <ion-icon name="mail-outline"></ion-icon>
+                                <ion-icon name="mail-outline" class="icon"></ion-icon>
                                 <input type="email" name="fEmail" class="fInput" placeholder="Digite seu e-mail">
                             </div>
                         </div>
@@ -46,18 +45,20 @@
                         <div class="password-wrapper">
                             <label for="fPassword" class="fText">Senha</label>
                             <div class="input">
-                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <ion-icon name="lock-closed-outline" class="icon"></ion-icon>
                                 <input type="password" name="fPassword" class="fInput" placeholder="Digite sua senha">
-                                <button id="eye-button">
-                                    <ion-icon name="eye-outline"></ion-icon>
+                                <button type="button" id="eye-button">
+                                    <ion-icon name="eye-outline" ></ion-icon>
                                 </button>
                             </div>
                         </div>
     
                         <!-- Remember & Password Recover -->
-                        <div class="options">
-                            <input type="checkbox" name="fCheckbox" id="fCheckbox">
-                            <label for="fCheckbox">Lembre-me</label>
+                        <div id="options">
+                            <div class="checkbox">
+                                <input type="checkbox" name="fCheckbox" id="fCheckbox">
+                                <label for="fCheckbox">Lembre-me</label>
+                            </div>
                             <a href="">Esqueci minha senha</a>
                         </div>
     
@@ -67,13 +68,12 @@
                             <a href="">Não tem uma conta? <strong>Registre-se</strong></a>
                         </div>
                     </form>
-                </div>
             </div>
         </section>
 
         <!-- Right Card -->
-        <section class="right-card">
-            <h1>Right Card</h1>
+        <section id="right-card">
+                <img src="./assets/img1.jpg" class="carousel" alt="">
         </section>
     </div>
 
