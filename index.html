@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+
+    <title>Project camp.in</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Card -->
+        <section class="left-card">
+            
+            <!-- Login Card -->
+            <div id="card-login">
+                <!-- Top Login (Logo and Dark/Light Button)-->
+                <div class="top-login">
+                    <img src="./assets/logo.png" alt="camp.in">
+                    <div>Light/Dark</div>
+                </div>
+                
+                <!-- Login Card -->
+                <div id="login">
+
+                    <!-- Header -->
+                    <div class="header">
+                        <div class="header-title">
+                            <ion-icon name="enter-outline"></ion-icon>
+                            <h1>Faça seu login</h1>
+                        </div>
+                        <p>Entre com suas informações de cadastro.</p>
+                    </div>
+    
+                    <!-- Form Login -->
+                    <form action="">
+                        <!-- Email -->
+                        <div class="input">
+                            <label for="fEmail">E-mail</label>
+                            <div class="email-input">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <input type="email" name="fEmail" id="fEmail" placeholder="Digite seu e-mail" required>
+                            </div>
+                        </div>
+                        
+                        <!-- Password -->
+                        <div class="input">
+                            <label for="fPassword">Senha</label>
+                            <div class="password-input">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <input type="password" name="fPassword" id="fPassword">
+                                <button id="eye-button">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+    
+                        <!-- Remember & Password Recover -->
+                        <div class="options">
+                            <input type="checkbox" name="fCheckbox" id="fCheckbox">
+                            <label for="fCheckbox">Lembre-me</label>
+                            <a href="">Esqueci minha senha</a>
+                        </div>
+    
+                        <!-- Submit Button & Register-->
+                        <div class="enter-button">
+                            <button type="submit">ENTRAR</button>
+                            <a href="">Não tem uma conta? <strong>Registre-se</strong></a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Right Card -->
+        <section class="right-card">
+            <h1>Right Card</h1>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+</body>
+</html>
