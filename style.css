@@ -358,24 +358,38 @@ form {
 
 /* Right Card Start*/
 #right-card {
+    /* border: 1px solid red; */
     width: 50vw;
     height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
+    
     .carousel {
+        /* border: 1px solid red; */
         width: 85%;
         height: 85%;
-        border-radius: 2rem;
+        border-radius: 3rem;
+        background-size: cover;
+        
+        -webkit-box-shadow: 1rem 1rem 7rem -2.4rem rgba(0,0,0,1);
+        -moz-box-shadow: 1rem 1rem 7rem -2.4rem rgba(0,0,0,1);
+        box-shadow: 1rem 1rem 7rem -2.4rem rgba(0,0,0,1);
     }
+
+    .navigation-slides {
+        margin-top: 3rem;
+    }
+
 }
 /* Right Card End*/
 
 
 /* Media Queries */
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
     #left-card {
         width: 100vw;
         padding: 0 1.5rem;
@@ -393,8 +407,12 @@ form {
 }
 
 @media (max-width: 600px) {
+    body {
+        background-color: var(--bg-card-login);
+    }
+
     #card-login {
-        background-color: var(--bg-color);
+        background-color: var(--bg-card-login);
         box-shadow: none;
     }
 
