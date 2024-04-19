@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-
 
     <title>Project camp.in</title>
 </head>
@@ -16,7 +15,10 @@
             <!-- Top Login (Logo and Dark/Light Button)-->
             <div class="top-login">
                 <img src="./assets/logo.png" alt="camp.in">
-                <h1>Light/Dark</h1>
+                <div id="switch" onclick="toggleMode()">
+                    <button></button>
+                    <span></span>
+                </div>
             </div>
 
             <!-- Login Card -->
@@ -46,9 +48,9 @@
                             <label for="fPassword" class="fText">Senha</label>
                             <div class="input">
                                 <ion-icon name="lock-closed-outline" class="icon"></ion-icon>
-                                <input type="password" name="fPassword" class="fInput" placeholder="Digite sua senha">
-                                <button type="button" id="eye-button">
-                                    <ion-icon name="eye-outline" ></ion-icon>
+                                <input type="password" id="passwordId" name="fPassword" class="fInput" placeholder="Digite sua senha">
+                                <button type="button" id="eye-button" onclick="eyeButtonClicked()">
+                                    <ion-icon name="eye-outline" class=""></ion-icon>
                                 </button>
                             </div>
                         </div>

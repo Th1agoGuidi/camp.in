@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
@@ -21,6 +24,28 @@
     --placeholder-color: #ABABAB;
     --eye-button-color: #B0B0B0;
 
+    --switch-bg-url: url(./assets/moon.svg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --dl-btn-hover: rgba(65, 165, 92, 0.4);
+
+}
+
+.light {
+    --bg-color: #E4DBCD;
+    --second-color: #876d44;
+    --text-color: #574C3A;
+    --text-bold-color: #2E2312;
+    --bg-card-login: #F1EADD;
+    --input-color: #EFEAE2;
+    --input-stroke: #574C3A;
+    --placeholder-color: #725F40;
+    --eye-button-color: #725F40;
+
+    --switch-bg-url: url(./assets/sun.svg);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --dl-btn-hover: rgb(135, 109, 68, 0.2);
 
 }
 
@@ -35,8 +60,8 @@ body {
     display: flex;
 }
 
+/* Left Card Start */
 #left-card {
-    border: 0.1rem solid green;
     width: 50vw;
     height: 100vh;
 
@@ -44,20 +69,66 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 5rem;
-
+    
+    padding: 2rem 4rem;
 }
 
+/* Logo & Theme Button */
 .top-login {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20rem;
 }
 
+/* Theme Button Start */
+#switch {
+    position: relative;
+    width: 6.4rem;
+    margin: 0.4rem auto;
+}
+
+/* Theme Button Start */
+#switch button {
+    width: 3.2rem;
+    height: 3.2rem;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    right: 1;
+    z-index: 1;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    animation: slide-back 0.4s;
+    cursor: pointer;
+}
+
+#switch button:hover {
+    outline: 0.5rem solid var(--dl-btn-hover);
+}
+
+.light #switch button {
+    animation: slide-in 0.4s forwards;
+}
+
+#switch span {
+    display: block;
+    width: 6.4rem;
+    height: 2.4rem;
+    border-radius: 5rem;
+    background: var(--surface-color);
+    border: 0.1rem solid var(--stroke-color);
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+}
+/* Theme Button End */
+
+/* Card Login Start */
 #card-login {
-    /* border: 1px solid aqua; */
-    max-width: 57.2rem;
-    max-height: 51.2rem;
+    max-width: 62.2rem;
+    max-height: 56.2rem;
     width: 100%;
     height: 100%;
     border-radius: 1rem;
@@ -69,13 +140,14 @@ body {
     align-items: center;
     margin: 3rem;
 
-    -webkit-box-shadow: 10px 10px 55px -24px rgba(0,0,0,0.7);
-    -moz-box-shadow: 10px 10px 55px -24px rgba(0,0,0,0.7);
-    box-shadow: 10px 10px 55px -24px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 1rem 1rem 5rem -2.4rem rgba(0,0,0,0.7);
+    -moz-box-shadow: 1rem 1rem 5rem -2.4rem rgba(0,0,0,0.7);
+    box-shadow: 1rem 1rem 5rem -2.4rem rgba(0,0,0,0.7);
 }
 
-/* Header */
+/* Header Start*/
 #header {
+    /* Header Title */
     .header-title {
         display: flex;
         align-items: center;
@@ -89,10 +161,11 @@ body {
 
         ion-icon {
             font-size: 3rem;
-            color: #41A55B;
+            color: var(--second-color);
         }
     }
 
+    /* Header Subtitle */
     p {
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
@@ -101,12 +174,14 @@ body {
     }
     
 }
+/* Header End*/
 
-/* Form */
+/* Form Start*/
 form {
     display: flex;
     flex-direction: column;
 
+    /* Email & Password Title */
     .fText {
         font-family: 'Poppins', sans-serif;
         font-size: 1.6rem;
@@ -114,6 +189,7 @@ form {
         color: var(--text-bold-color);
     }
 
+    /* Email & Password Inputs Start */
     .input {
         border: 0.2rem solid var(--input-stroke);
         border-radius: 0.4rem;
@@ -123,21 +199,21 @@ form {
         justify-content: baseline;
         background-color: var(--input-color);
         
-        width: 35rem;
-        height: 4rem;
+        width: 36rem;
+        height: 4.5rem;
         min-width: 25rem;
 
         gap: 1rem;
-        margin-right: 0.5rem;
-        margin-bottom: 2rem;
+        margin-top: 0.5rem;
         
         .icon {
             font-size: 2.4rem;
             padding: 0.1rem;
             margin-left: 1rem;
             color: var(--input-stroke);
-        }
+        } 
         
+        /* Hidden/Show Password Button */
         button[id=eye-button] {
             all: unset;
 
@@ -151,9 +227,15 @@ form {
             cursor: pointer;
         }
 
-
         input[type=password]::-ms-reveal {
             display: none;
+        }
+    }
+
+    .input:focus-within {
+        border: 0.25rem solid var(--second-color);
+        .icon {
+            color: var(--second-color);
         }
     }
     
@@ -165,16 +247,24 @@ form {
         border: none;
         background-color: transparent;
         color: var(--placeholder-color);
-        
+    }
+    /* Email & Password Inputs End */
 
+    .email-wrapper {
+        margin-bottom: 2.4rem;
+    }
+    .password-wrapper {
+        margin-bottom: 3rem;
     }
 
+    /* Checkbox & Recover Anchor */
     #options {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2.5rem;
-        
+
+        /* Checkbox Start*/
         .checkbox {
             display: flex;
             align-items: center;
@@ -189,58 +279,85 @@ form {
             border: 0.2rem solid var(--input-stroke);
             border-radius: 0.3rem;
             cursor: pointer;
+
+            position: relative;
         }
+
+        input:checked {
+            border: 0.2rem solid var(--second-color);
+
+        }
+
+        input:checked::before {
+            content: "✔";
+            font-size: 1.5rem;
+            color: var(--second-color);
+
+            position: absolute;
+            top: -0.3rem;
+            left: 0.2rem;
+        }
+        /* Checkbox End */
         
+        /* Checkbox Title */
         label {
             font-family: 'Roboto', sans-serif;
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: 350;
             color: var(--text-color);
         }
-        
+
+        /* Recover Anchor */
         a {
             display: flex;
             justify-content: space-between;
             font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+
             font-weight: 600;
             color: var(--second-color);
             text-decoration: none;
+            padding-right: 0.7rem;
         }
-        
     }
 
+    /* Submit Button & Register Anchor*/
     .enter-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+            /* Submit Button */
+            button {
+                border: none;
+                width: 35rem;
+                height: 4rem;
+                min-width: 25rem;
+                border-radius: 0.5rem;
 
-        button {
-            border: none;
-            width: 35rem;
-            height: 4rem;
-            min-width: 25rem;
-            border-radius: 0.5rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: var(--bg-card-login);
+                background-color: var(--second-color);
+                cursor: pointer;
+            }
 
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            background-color: var(--second-color);
-            cursor: pointer;
+            /* Register Anchor */
+            a {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.2rem;
+                color: var(--second-color);
+                text-decoration: none;
+            }
         }
-
-        a {
-            font-family: 'Poppins', sans-serif;
-            color: var(--second-color);
-            text-decoration: none;
-        }
-    }
 }
+/* Form End*/
+/* Card Login End */
+/* Left Card End */
 
-/* Right Card */
+/* Right Card Start*/
 #right-card {
-    border: 0.1rem solid red;
-
     width: 50vw;
     height: 100vh;
 
@@ -254,22 +371,31 @@ form {
         border-radius: 2rem;
     }
 }
+/* Right Card End*/
+
 
 /* Media Queries */
-
 @media (max-width: 1000px) {
     #left-card {
         width: 100vw;
         padding: 0 1.5rem;
     }
+
     #right-card {
         display: none;
     }
 }
 
+@media (max-height: 700px) {
+    .top-login {
+        margin-top: 5rem;
+    }
+}
+
 @media (max-width: 600px) {
-    #login {
+    #card-login {
         background-color: var(--bg-color);
+        box-shadow: none;
     }
 
     form .input, form button {
@@ -277,14 +403,27 @@ form {
     }
 }
 
+@media (max-width: 470px) {
+    #left-card {
+        #card-login {
+            margin: 0;
+        }
+
+        .top-login {
+            gap: 5rem;
+            margin-bottom: 5rem;
+        }
+    }
+}
+
 @media (max-width: 320px) {
-    
+    #card-login {
+        margin: 0;
+    }
 
     #header {
         display: flex;
         flex-direction: column;
-        align-items: baseline;
-        gap: 0.5rem;
 
         .header-title {
             font-size: 1.5rem;
@@ -297,5 +436,26 @@ form {
 
     form .input, form button {
         max-width: 20rem;
+    }
+}
+
+/* Animations */
+
+/* Light/Dark Mode Button*/
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+/* Light/Dark Mode Button*/
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
     }
 }
