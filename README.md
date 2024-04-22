@@ -5,9 +5,11 @@ Projeto de um formulário de login para site de viagens / campings. <br/>
 </p>
 
 <p align="center">
-  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;・&nbsp;&nbsp;
-  <a href="##projeto">Projeto</a>&nbsp;&nbsp;・&nbsp;&nbsp;
-  <a href="#aprendizados">Aprendizados</a>
+  <a href="## 📌 Tecnologias">Tecnologias</a>&nbsp;&nbsp;・&nbsp;&nbsp;
+  <a href="## 💻 Projeto">Projeto</a>&nbsp;&nbsp;・&nbsp;&nbsp;
+  <a href="## 💡 Aprendizados">Aprendizados</a>&nbsp;&nbsp;・&nbsp;&nbsp;
+  <a href="## :memo: Licença">Licença</a>
+  
 </p>
 
 <p align="center">
@@ -25,7 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS;
 - JavaScript;
-- [Slick](https://kenwheeler.github.io/slick/ target="_blank") -  Slide Carousel Library;
+- <a href="https://kenwheeler.github.io/slick/" target="_blank">Slick</a> - Slide Carousel Library;
 - Git e Github;
 - Ionicons;
 - Figma.
@@ -37,11 +39,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O camp.in é um site contendo um formulário de login para uma empresa de viagens / camping. Isso é apenas um projeto para 
 desenvolver minhas habilidades, não é um site real.
 
-- [Acesse o projeto finalizado e online](https://th1agoguidi.github.io/camp.in/);
+- <a href="https://th1agoguidi.github.io/camp" target="_blank">Acesse</a> o projeto finalizado e online;
 
-- Você pode visualizar o layout do projeto no Figma através [desse link](https://www.figma.com/community/file/1241116056018043491/login-form-desafio-discover target="_blank");
+- Você pode visualizar o layout do projeto no Figma através <a href="https://www.figma.com/community/file/1241116056018043491/login-form-desafio-discover" target="_blank">desse link</a>;
 
-- Layout do projeto desenvolvido pela [Rocketseat](https://www.rocketseat.com.br/ target="_blank"), não é de minha autoria.
+- Layout do projeto desenvolvido pela <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat</a>, não é de minha autoria.
 
 
 <h3>⚙️ Mudanças Pessoais no Projeto</h3>
