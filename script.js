@@ -1,14 +1,11 @@
 let logo =document.querySelector('.top-login img');
 
-
-
 function toggleMode() {
     //Toggle Dark/Light Mode
     const html = document.documentElement
     html.classList.toggle("light");
 
     //Change Logo in Dark/Light Mode
-
     if (html.classList.contains("light")) {
         logo.setAttribute('src', './assets/logo-light.png');
     }
@@ -31,3 +28,15 @@ function eyeButtonClicked() {
         icon.name = "eye-outline";
     }
 }
+
+//Slides
+$('.slide-wrapper').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    pauseOnFocus: false,
+    autoplaySpeed: 3500,
+  });

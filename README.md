@@ -5,10 +5,9 @@ Projeto de um formulário de login para site de viagens / campings. <br/>
 </p>
 
 <p align="center">
-  <a href="#📌-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#💻-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#📌-tecnologias">Tecnologias</a>&nbsp;&nbsp;・&nbsp;&nbsp;
+  <a href="#💻-projeto">Projeto</a>&nbsp;&nbsp;・&nbsp;&nbsp;
+  <a href="#💡-aprendizados">Aprendizados</a>
 </p>
 
 <p align="center">
@@ -17,7 +16,7 @@ Projeto de um formulário de login para site de viagens / campings. <br/>
 
 <br>
 <p align="center">
-  <img alt="projeto camp.in" src=".github/project-template.jpg" width="100%">
+  <img alt="projeto camp.in" src=".github/campin-example.gif" width="100%">
 </p>
 
 ## 📌 Tecnologias
@@ -26,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS;
 - JavaScript;
-- [Slick](https://kenwheeler.github.io/slick/) Carousel Library;
+- [Slick](https://kenwheeler.github.io/slick/) -  Slide Carousel Library;
 - Git e Github;
 - Ionicons;
 - Figma.
@@ -36,21 +35,32 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O camp.in é um site contendo um formulário de login para uma empresa de viagens / camping. Isso é apenas um projeto para 
-<br>desenvolver minhas habilidades, não é um site real.
+desenvolver minhas habilidades, não é um site real.
 
-- [Acesse o projeto finalizado, online](th1agoguidi.github.io/camp.in/);
+- [Acesse o projeto finalizado e online](th1agoguidi.github.io/camp.in/);
 
-- Você pode visualizar o layout do projeto no Figma através [desse link](https://www.figma.com/community/file/1241116056018043491/login-form-desafio-discover).
+- Você pode visualizar o layout do projeto no Figma através [desse link](https://www.figma.com/community/file/1241116056018043491/login-form-desafio-discover);
+
+- Layout do projeto desenvolvido pela [Rocketseat](https://www.rocketseat.com.br/), não é de minha autoria.
 
 
 <h3>⚙️ Mudanças Pessoais no Projeto</h3>
 
-Para aprimorar minhas habilidades resolvi fazer algumas mudanças pessoais no projeto
+Para aprimorar minhas habilidades resolvi fazer algumas mudanças pessoais no projeto:
 
 - Botão de aparência Dark / Light;
-- [ ] Carrossel de Imagens e slide entre elas automático
+- Slide de imagens invés de imagens estáticas.
 
 ---
+
+## 💡 Aprendizados
+
+Esse foi o primeiro projeto em que me desafiei de verdade, sem seguir um passo a passo (a famosa receita de bolo) de tutoriais / cursos. Coloquei a mão na massa com o conhecimento que tenho, pesquisando minhas dificuldades e tentando desenvolver o projeto com o mínimo de ajuda possível. Com esse projeto eu consegui aprender mais sobre:
+
+- Responsividade;
+- Usar Libs (Slick Carousel Slider);
+- Aprimorei meus conhecimentos com CSS;
+- Identação e organização do código.
 
 ## :memo: Licença
 

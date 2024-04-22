@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./style.css">
 
     <title>Project camp.in</title>
 </head>
 <body>
+    <!-- Container Start -->
     <div class="container">
         <!-- Left Card -->
         <section id="left-card">
@@ -73,21 +75,29 @@
             </div>
         </section>
 
-        <!-- Right Card -->
+        <!-- Right Card Start-->
         <section id="right-card">
-            <div class="carousel" style="background-image: url('./assets/img4.jpg');">
-            </div>
+            <!-- Slides Carousel -->
+            <div class="slide-wrapper">
+               <div style="background-image: url(./assets/img1.jpg);"></div>
+               <div style="background-image: url(./assets/img2.jpg);"></div>
+               <div style="background-image: url(./assets/img3.jpg);"></div>
+               <div style="background-image: url(./assets/img4.jpg);"></div>
 
-            <div class="navigation-slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
             </div>
+            <!-- Slide Carousel Dots -->
+            <ul class="slick-dots"></ul>
         </section>
+        <!-- Right Card End -->
     </div>
+    <!-- Container End -->
 
-    <script src="./script.js"></script>
+    <!-- Slide Library -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript"src="./script.js"></script>
+    <!-- ionicon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
 </body>
