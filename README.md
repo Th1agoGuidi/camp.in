@@ -1,3 +1,4 @@
+<base target="_blank">
 <h1 align="center"> camp.in </h1>
 
 <p align="center">
@@ -5,10 +6,10 @@ Projeto de um formulário de login para site de viagens / campings. <br/>
 </p>
 
 <p align="center">
-  <a href="## 📌 Tecnologias">Tecnologias</a>&nbsp;&nbsp;・&nbsp;&nbsp;
-  <a href="## 💻 Projeto">Projeto</a>&nbsp;&nbsp;・&nbsp;&nbsp;
-  <a href="## 💡 Aprendizados">Aprendizados</a>&nbsp;&nbsp;・&nbsp;&nbsp;
-  <a href="## :memo: Licença">Licença</a>
+  <a href="#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;・&nbsp;&nbsp;
+  <a href="#-Projeto">Projeto</a>&nbsp;&nbsp;・&nbsp;&nbsp;
+  <a href="#-Aprendizados">Aprendizados</a>&nbsp;&nbsp;・&nbsp;&nbsp;
+  <a href="#-Licença">Licença</a>
   
 </p>
 
@@ -27,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS;
 - JavaScript;
-- <a href="https://kenwheeler.github.io/slick/" target="_blank">Slick</a> - Slide Carousel Library;
+- <a href="https://kenwheeler.github.io/slick/" target="_blank" rel="noopener">Slick</a> - Slide Carousel Library;
 - Git e Github;
 - Ionicons;
 - Figma.
@@ -39,9 +40,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O camp.in é um site contendo um formulário de login para uma empresa de viagens / camping. Isso é apenas um projeto para 
 desenvolver minhas habilidades, não é um site real.
 
-- <a href="https://th1agoguidi.github.io/camp" target="_blank">Acesse</a> o projeto finalizado e online;
+- [Acesse](https://th1agoguidi.github.io/camp){:target="_blank"} o projeto finalizado e online;
 
-- Você pode visualizar o layout do projeto no Figma através <a href="https://www.figma.com/community/file/1241116056018043491/login-form-desafio-discover" target="_blank">desse link</a>;
+- Você pode visualizar o layout do projeto no Figma através <a href="https://www.figma.com/community/file/1241116056018043491/login-form-desafio-discover" target="_blank" rel="noopener">desse link</a>;
 
 - Layout do projeto desenvolvido pela <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat</a>, não é de minha autoria.
 
@@ -64,6 +65,6 @@ Esse foi o primeiro projeto em que me desafiei de verdade, sem seguir um passo a
 - Aprimorei meus conhecimentos com CSS;
 - Identação e organização do código.
 
-## :memo: Licença
+## 📝 Licença
 
 Esse projeto está sob a licença MIT.
