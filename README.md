@@ -1,4 +1,3 @@
-<base target="_blank">
 <h1 align="center"> camp.in </h1>
 
 <p align="center">
@@ -40,11 +39,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O camp.in é um site contendo um formulário de login para uma empresa de viagens / camping. Isso é apenas um projeto para 
 desenvolver minhas habilidades, não é um site real.
 
-- [Acesse](https://th1agoguidi.github.io/camp){:target="_blank"} o projeto finalizado e online;
+- <a href="https://th1agoguidi.github.io/camp.in/" target="_blank" rel="noopener">Acesse</a> o projeto finalizado e online;
 
 - Você pode visualizar o layout do projeto no Figma através <a href="https://www.figma.com/community/file/1241116056018043491/login-form-desafio-discover" target="_blank" rel="noopener">desse link</a>;
 
-- Layout do projeto desenvolvido pela <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat</a>, não é de minha autoria.
+- Layout do projeto desenvolvido pela <a href="https://www.rocketseat.com.br/" target="_blank" rel="noopener">Rocketseat</a>, não é de minha autoria.
 
 
 <h3>⚙️ Mudanças Pessoais no Projeto</h3>
